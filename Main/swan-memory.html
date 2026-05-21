@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Вспомнить</title>
+
+  <link rel="stylesheet" href="css/swan-memory.css" />
+</head>
+<body>
+  <main class="swan-memory-scene">
+    <video
+      id="swanVideo"
+      class="swan-video-source"
+      src="video/swan.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    ></video>
+
+    <canvas id="swanAsciiCanvas" class="swan-ascii-canvas"></canvas>
+
+    <div class="swan-dark-layer"></div>
+
+    <section class="swan-dialogue-box">
+      <div id="swanDialogueLines" class="swan-dialogue-lines"></div>
+    </section>
+
+    <div id="swanSpaceHint" class="swan-space-hint">
+      нажмите пробел
+    </div>
+  </main>
+
+<audio
+  id="swanWhiteNoiseAudio"
+  src="audio/whitenoise.mp3"
+  preload="auto"
+  loop
+></audio>
+
+  <script src="js/swan-memory.js"></script>
+</body>
+</html>

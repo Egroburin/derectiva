@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Белый шум</title>
+
+  <link rel="stylesheet" href="css/white-memory.css" />
+</head>
+<body>
+  <main class="white-memory-scene">
+    <div class="white-memory-bg"></div>
+    <div class="white-noise"></div>
+    <div class="white-dark-layer"></div>
+
+    <section class="white-dialogue-box">
+      <div id="whiteDialogueLines" class="white-dialogue-lines"></div>
+    </section>
+
+    <div id="whiteSpaceHint" class="white-space-hint">
+      нажмите пробел
+    </div>
+
+    <audio
+      id="whiteNoiseAudio"
+      src="audio/whitenoise.mp3"
+      preload="auto"
+      loop
+    ></audio>
+  </main>
+
+  <script src="js/white-memory.js"></script>
+</body>
+</html>
